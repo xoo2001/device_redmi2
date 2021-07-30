@@ -15,8 +15,10 @@
 
 $(call inherit-product, device/xiaomi/wt88047x/full_wt88047x.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
+# Inherit some common NusantaraProject stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+USE_PIXEL_CHARGING := true
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
@@ -27,7 +29,7 @@ TARGET_BOARD_PLATFORM_VARIANT := msm8916
 # Assert
 TARGET_OTA_ASSERT_DEVICE := HM2014811,HM2014812,HM2014813,HM2014814,HM2014815,HM2014816,HM2014817,HM2014818,HM2014819,HM2014820,HM2014821,HM2014112,wt88047,wt86047,wt88047x
 
-PRODUCT_NAME := lineage_wt88047x
+PRODUCT_NAME := nad_wt88047x
 BOARD_VENDOR := xiaomi
 PRODUCT_DEVICE := wt88047x
 

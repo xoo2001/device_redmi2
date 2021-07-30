@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_wt88047x.mk
+    $(LOCAL_DIR)/nad_wt88047x.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_wt88047x-user \
-    lineage_wt88047x-userdebug \
-    lineage_wt88047x-eng
+    nad_wt88047x-user \
+    nad_wt88047x-userdebug \
+    nad_wt88047x-eng
