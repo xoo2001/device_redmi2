@@ -81,5 +81,11 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 TARGET_LD_SHIM_LIBS += \
     /vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so
 
+# Inherit common Android Go defaults.
+$(call inherit-product, build/make/target/product/go_defaults_512.mk)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.low.ram=false
+
 # inherit from the proprietary version
 include vendor/xiaomi/wt88047x/BoardConfigVendor.mk
