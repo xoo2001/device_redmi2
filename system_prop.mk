@@ -5,6 +5,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.fluence.speaker=false
 
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+debug.sf.latch_unsignaled=1
+debug.sf.disable_backpressure=1
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false \
