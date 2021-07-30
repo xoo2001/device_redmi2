@@ -165,6 +165,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libwpa_client
+    
+    # Inherit common Android Go defaults.
+$(call inherit-product, build/make/target/product/go_defaults_512.mk)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.low.ram=false
+
 
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
