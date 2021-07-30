@@ -66,8 +66,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_wt88047x
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_SOURCE := kernel/wingtech/msm8916
 TARGET_KERNEL_CONFIG := wt88047_defconfig
-BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1 androidboot.selinux=permissive
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
